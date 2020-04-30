@@ -1,5 +1,9 @@
 'use stict';
+
 var  score= 0;  
+
+//  Question: username
+
 var userName;
 
 function fname() {
@@ -10,53 +14,81 @@ console.log('the user name is ' + userName);
 
 fname();
 
+//  Question: about me 
 
-var aboutMe = prompt('Wanna get to know me better?');
+var aboutMe;
 
-if (aboutMe.toLowerCase() === 'yes'|| aboutMe.toLowerCase() === 'y' ) {
-  console.log('User answerd '+aboutMe, 'should be yes');
-  alert('Great! lets start');
-} else if (aboutMe.toLowerCase() === 'no' || aboutMe.toLowerCase() === 'n' ) {
-  alert('Sorry');
-} else {
-  prompt('Please answer with a yes or a no');
+function faboutMe() {
+  aboutMe = prompt('Wanna get to know me better?');
+
+  if (aboutMe.toLowerCase() === 'yes'|| aboutMe.toLowerCase() === 'y' ) {
+    console.log('User answerd '+aboutMe, 'should be yes');
+    alert('Great! lets start');
+  } else if (aboutMe.toLowerCase() === 'no' || aboutMe.toLowerCase() === 'n' ) {
+    alert('Sorry');
+  } else {
+    prompt('Please answer with a yes or a no');
+  }
+
 }
+
+faboutMe();
 
 //  Question: What color do I like? Answer: Blue is Yes
 
-var question1 = prompt('Do I like the color blue?');
-if (question1.toLowerCase() === 'yes'|| aboutMe.toLowerCase() === 'y') {
-  console.log('User answerd '+question1, 'should be yes');
-  alert('Right!');
-  score++;
-} else if (question1.toLowerCase() === 'no'|| aboutMe.toLowerCase() === 'n' ) {
-  alert('Wrong!');
-} else {
-  prompt('Please answer with a yes or a no');
+var question1;
+
+function fquestion1(){
+  question1 = prompt('Do I like the color blue?');
+  if (question1.toLowerCase() === 'yes'|| aboutMe.toLowerCase() === 'y') {
+    console.log('User answerd '+question1, 'should be yes');
+    alert('Right!');
+    score++;
+  } else if (question1.toLowerCase() === 'no'|| aboutMe.toLowerCase() === 'n' ) {
+    alert('Wrong!');
+  } else {
+    prompt('Please answer with a yes or a no');
+  }
 }
+
+fquestion1();
 
 //  Question: Do I like ketchup on my hotdog? Answer: Yes
-var question2 = prompt('Do I like ketchup on a hotdog?');
-if (question2.toLowerCase() === 'yes' || aboutMe.toLowerCase() === 'y') {
-  console.log('User answerd '+question2, 'should be yes');
-  alert('Right!');
-  score++;
-} else if (question2.toLowerCase() === 'no' || aboutMe.toLowerCase() === 'n' ) {
-  alert('Wrong!');
-} else {
-  prompt('Please answer with a yes or a no');
+
+var question2;
+
+function fquestion2(){
+  question2 = prompt('Do I like ketchup on a hotdog?');
+  if (question2.toLowerCase() === 'yes' || aboutMe.toLowerCase() === 'y') {
+    console.log('User answerd '+question2, 'should be yes');
+    alert('Right!');
+    score++;
+  } else if (question2.toLowerCase() === 'no' || aboutMe.toLowerCase() === 'n' ) {
+    alert('Wrong!');
+  } else {
+    prompt('Please answer with a yes or a no');
+  }
 }
 
+fquestion2();
+
 // Question: Do I like to watch sports? Answer: Yes
-var question3 = prompt('Do I like to watch sports?');
-if (question3.toLowerCase() === 'yes'|| aboutMe.toLowerCase() === 'y' ) {
-  alert('Right!');
-  score++;
-} else if (question3.toLowerCase() === 'no' || aboutMe.toLowerCase() === 'n' ) {
-  alert('Wrong!');
-} else {
-  prompt('Please answer with a yes or a no');
+var question3;
+
+function fquestion3(){
+  question3 = prompt('Do I like to watch sports?');
+  if (question3.toLowerCase() === 'yes'|| aboutMe.toLowerCase() === 'y' ) {
+    alert('Right!');
+    score++;
+  } else if (question3.toLowerCase() === 'no' || aboutMe.toLowerCase() === 'n' ) {
+    alert('Wrong!');
+  } else {
+    prompt('Please answer with a yes or a no');
+  }
+
 }
+
+fquestion3();
 
 // Question: Do I like margaritas? Answer: Yes
 var question4 = prompt('Do I like margaritas?');
