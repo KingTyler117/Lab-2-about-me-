@@ -1,9 +1,15 @@
 'use stict';
 var  score= 0;  
+var userName;
 
-var userName = prompt('What is your name?');
+function fname() {
+  userName = prompt('What is your name?');
+}
 
 console.log('the user name is ' + userName);
+
+fname();
+
 
 var aboutMe = prompt('Wanna get to know me better?');
 
@@ -15,6 +21,7 @@ if (aboutMe.toLowerCase() === 'yes'|| aboutMe.toLowerCase() === 'y' ) {
 } else {
   prompt('Please answer with a yes or a no');
 }
+
 //  Question: What color do I like? Answer: Blue is Yes
 
 var question1 = prompt('Do I like the color blue?');
