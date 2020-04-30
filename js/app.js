@@ -1,6 +1,6 @@
 'use stict';
 
-var  score= 0;
+var score= 0;
 
 //  Question: username
 
@@ -116,8 +116,8 @@ function fquestion5(){
   if (question5.toLowerCase() === 'yes' || aboutMe.toLowerCase() === 'y' ) {
     alert('Wrong!');
   } else if (question5.toLowerCase() === 'no' || aboutMe.toLowerCase() === 'n' ) {
-  alert('Right!');
-  score++;
+    alert('Right!');
+    score++;
   } else {
     prompt('Please answer with a yes or a no');
   }
@@ -133,7 +133,7 @@ fquestion5();
 var guessLuckyNumber;
 
 function fnumber(){
-  var luckyNumber=1;
+  var luckyNumber='1';
   console.log(luckyNumber);
   for (var i=0; i<4; i++){
     if (i===0){
@@ -148,18 +148,18 @@ function fnumber(){
       guessLuckyNumber = prompt('Was that number between 1-10? You need to enter any whole number in the rannge of 1 through 10.');
     }
 
-    if (luckyNumber == guessLuckyNumber){
+    if (luckyNumber === guessLuckyNumber){
       alert(' Great guess!  ' + guessLuckyNumber + ' was correct.');
       score++;
       break;
     }
-    else if (i==3){
+    else if (i===3){
       alert('Sorry, Today just isnt your day.')
     }
     else if (guessLuckyNumber < luckyNumber){
       alert('Too low! Try again.');
     }
-    else if  (guessLuckyNumber > luckyNumber){
+    else if (guessLuckyNumber > luckyNumber){
       alert('Too high! Try again.');
 
     }
